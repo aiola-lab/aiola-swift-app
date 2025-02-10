@@ -1,4 +1,4 @@
-# Aiola Streaming App
+# Aiola Streaming & TTS App
 
 ## Overview
 AiolaStreamingApp is an iOS application that enables real-time audio streaming and playback using Aiola's Live Streaming API. It provides a seamless experience for users to interact with audio streams, including text-to-speech (TTS) integration and audio player functionalities.
@@ -18,7 +18,7 @@ AiolaStreamingApp is an iOS application that enables real-time audio streaming a
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/AiolaStreamingApp.git
+   git clone https://github.com/aiola-lab/aiola-swift-app.git
    cd AiolaStreamingApp
    ```
 2. Open the project in Xcode:
@@ -27,6 +27,8 @@ AiolaStreamingApp is an iOS application that enables real-time audio streaming a
    ```
 3. Install the Aiola Swift SDK:
    ```bash
+   git clone https://github.com/aiola-lab/aiola-swift-sdk.git
+
    swift package add https://github.com/aiola-lab/aiola-swift-sdk
    ```
 4. Configure API keys and backend URL in `AudioStreamingManager.swift`
@@ -121,9 +123,3 @@ import AiolaSwiftSDK
 
 private let ttsClient = AiolaTTSClient(baseUrl: "<your-base-url>/api/tts", bearerToken: "<your-bearer-token>")
 ```
-
-
-## Contributing
-1. Fork the repository.
-2. Create a new branch for your feature/fix.
-3. Submit a pull request.
