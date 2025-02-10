@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEA961D02D5A56B10024C1B2 /* AiolaSwiftSDK in Frameworks */ = {isa = PBXBuildFile; productRef = CEA961CF2D5A56B10024C1B2 /* AiolaSwiftSDK */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FC3873B2D5406A20051CC71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FC387202D5406A00051CC71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FC387272D5406A00051CC71;
+			remoteInfo = AiolaStreamingApp;
+		};
+		9FC387452D5406A20051CC71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FC387202D5406A00051CC71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FC387272D5406A00051CC71;
+			remoteInfo = AiolaStreamingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FC387282D5406A00051CC71 /* AiolaStreamingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiolaStreamingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FC3873A2D5406A20051CC71 /* AiolaStreamingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AiolaStreamingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FC387442D5406A20051CC71 /* AiolaStreamingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AiolaStreamingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9FC3872A2D5406A00051CC71 /* AiolaStreamingApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AiolaStreamingApp;
+			sourceTree = "<group>";
+		};
+		9FC3873D2D5406A20051CC71 /* AiolaStreamingAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AiolaStreamingAppTests;
+			sourceTree = "<group>";
+		};
+		9FC387472D5406A20051CC71 /* AiolaStreamingAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AiolaStreamingAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FC387252D5406A00051CC71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA961D02D5A56B10024C1B2 /* AiolaSwiftSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FC387372D5406A20051CC71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FC387412D5406A20051CC71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FC3871F2D5406A00051CC71 = {
+			isa = PBXGroup;
+			children = (
+				9FC3872A2D5406A00051CC71 /* AiolaStreamingApp */,
+				9FC3873D2D5406A20051CC71 /* AiolaStreamingAppTests */,
+				9FC387472D5406A20051CC71 /* AiolaStreamingAppUITests */,
+				9FC3875C2D540B510051CC71 /* Frameworks */,
+				9FC387292D5406A00051CC71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FC387292D5406A00051CC71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FC387282D5406A00051CC71 /* AiolaStreamingApp.app */,
+				9FC3873A2D5406A20051CC71 /* AiolaStreamingAppTests.xctest */,
+				9FC387442D5406A20051CC71 /* AiolaStreamingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FC3875C2D540B510051CC71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FC387272D5406A00051CC71 /* AiolaStreamingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FC3874E2D5406A20051CC71 /* Build configuration list for PBXNativeTarget "AiolaStreamingApp" */;
+			buildPhases = (
+				9FC387242D5406A00051CC71 /* Sources */,
+				9FC387252D5406A00051CC71 /* Frameworks */,
+				9FC387262D5406A00051CC71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9FC3872A2D5406A00051CC71 /* AiolaStreamingApp */,
+			);
+			name = AiolaStreamingApp;
+			packageProductDependencies = (
+				9FC387692D5414220051CC71 /* AiolaSwiftSDK */,
+				CEA961CF2D5A56B10024C1B2 /* AiolaSwiftSDK */,
+			);
+			productName = AiolaStreamingApp;
+			productReference = 9FC387282D5406A00051CC71 /* AiolaStreamingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FC387392D5406A20051CC71 /* AiolaStreamingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FC387512D5406A20051CC71 /* Build configuration list for PBXNativeTarget "AiolaStreamingAppTests" */;
+			buildPhases = (
+				9FC387362D5406A20051CC71 /* Sources */,
+				9FC387372D5406A20051CC71 /* Frameworks */,
+				9FC387382D5406A20051CC71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FC3873C2D5406A20051CC71 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9FC3873D2D5406A20051CC71 /* AiolaStreamingAppTests */,
+			);
+			name = AiolaStreamingAppTests;
+			packageProductDependencies = (
+				9FC3876D2D5414AC0051CC71 /* AiolaSwiftSDK */,
+			);
+			productName = AiolaStreamingAppTests;
+			productReference = 9FC3873A2D5406A20051CC71 /* AiolaStreamingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FC387432D5406A20051CC71 /* AiolaStreamingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FC387542D5406A20051CC71 /* Build configuration list for PBXNativeTarget "AiolaStreamingAppUITests" */;
+			buildPhases = (
+				9FC387402D5406A20051CC71 /* Sources */,
+				9FC387412D5406A20051CC71 /* Frameworks */,
+				9FC387422D5406A20051CC71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FC387462D5406A20051CC71 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9FC387472D5406A20051CC71 /* AiolaStreamingAppUITests */,
+			);
+			name = AiolaStreamingAppUITests;
+			packageProductDependencies = (
+				9FC3876B2D5414970051CC71 /* AiolaSwiftSDK */,
+			);
+			productName = AiolaStreamingAppUITests;
+			productReference = 9FC387442D5406A20051CC71 /* AiolaStreamingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FC387202D5406A00051CC71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					9FC387272D5406A00051CC71 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					9FC387392D5406A20051CC71 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 9FC387272D5406A00051CC71;
+					};
+					9FC387432D5406A20051CC71 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 9FC387272D5406A00051CC71;
+					};
+				};
+			};
+			buildConfigurationList = 9FC387232D5406A00051CC71 /* Build configuration list for PBXProject "AiolaStreamingApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FC3871F2D5406A00051CC71;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CEA961CE2D5A56930024C1B2 /* XCLocalSwiftPackageReference "../../aiola-swift-sdk/AiolaSwiftSDK" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9FC387292D5406A00051CC71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FC387272D5406A00051CC71 /* AiolaStreamingApp */,
+				9FC387392D5406A20051CC71 /* AiolaStreamingAppTests */,
+				9FC387432D5406A20051CC71 /* AiolaStreamingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FC387262D5406A00051CC71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FC387382D5406A20051CC71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FC387422D5406A20051CC71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FC387242D5406A00051CC71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FC387362D5406A20051CC71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FC387402D5406A20051CC71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FC3873C2D5406A20051CC71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FC387272D5406A00051CC71 /* AiolaStreamingApp */;
+			targetProxy = 9FC3873B2D5406A20051CC71 /* PBXContainerItemProxy */;
+		};
+		9FC387462D5406A20051CC71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FC387272D5406A00051CC71 /* AiolaStreamingApp */;
+			targetProxy = 9FC387452D5406A20051CC71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9FC3874C2D5406A20051CC71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FC3874D2D5406A20051CC71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 1;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FC3874F2D5406A20051CC71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AiolaStreamingApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8KN24RHB47;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone to stream voice data.\n";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "aiola-streaming-app.AiolaStreamingApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FC387502D5406A20051CC71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AiolaStreamingApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8KN24RHB47;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone to stream voice data.\n";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "aiola-streaming-app.AiolaStreamingApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9FC387522D5406A20051CC71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "aiola-streaming-app.AiolaStreamingAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AiolaStreamingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AiolaStreamingApp";
+			};
+			name = Debug;
+		};
+		9FC387532D5406A20051CC71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "aiola-streaming-app.AiolaStreamingAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AiolaStreamingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AiolaStreamingApp";
+			};
+			name = Release;
+		};
+		9FC387552D5406A20051CC71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "aiola-streaming-app.AiolaStreamingAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AiolaStreamingApp;
+			};
+			name = Debug;
+		};
+		9FC387562D5406A20051CC71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "aiola-streaming-app.AiolaStreamingAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AiolaStreamingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FC387232D5406A00051CC71 /* Build configuration list for PBXProject "AiolaStreamingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FC3874C2D5406A20051CC71 /* Debug */,
+				9FC3874D2D5406A20051CC71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FC3874E2D5406A20051CC71 /* Build configuration list for PBXNativeTarget "AiolaStreamingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FC3874F2D5406A20051CC71 /* Debug */,
+				9FC387502D5406A20051CC71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FC387512D5406A20051CC71 /* Build configuration list for PBXNativeTarget "AiolaStreamingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FC387522D5406A20051CC71 /* Debug */,
+				9FC387532D5406A20051CC71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FC387542D5406A20051CC71 /* Build configuration list for PBXNativeTarget "AiolaStreamingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FC387552D5406A20051CC71 /* Debug */,
+				9FC387562D5406A20051CC71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		CEA961CE2D5A56930024C1B2 /* XCLocalSwiftPackageReference "../../aiola-swift-sdk/AiolaSwiftSDK" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../aiola-swift-sdk/AiolaSwiftSDK";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FC387692D5414220051CC71 /* AiolaSwiftSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AiolaSwiftSDK;
+		};
+		9FC3876B2D5414970051CC71 /* AiolaSwiftSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AiolaSwiftSDK;
+		};
+		9FC3876D2D5414AC0051CC71 /* AiolaSwiftSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AiolaSwiftSDK;
+		};
+		CEA961CF2D5A56B10024C1B2 /* AiolaSwiftSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AiolaSwiftSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9FC387202D5406A00051CC71 /* Project object */;
+}
