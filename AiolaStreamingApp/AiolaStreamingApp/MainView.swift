@@ -10,11 +10,6 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-//            ContentView()
-//                .tabItem {
-//                    Label("Home", systemImage: "house.fill")
-//                }
-
             AudioStreamingView()
                 .tabItem {
                     Label("Streaming", systemImage: "waveform")

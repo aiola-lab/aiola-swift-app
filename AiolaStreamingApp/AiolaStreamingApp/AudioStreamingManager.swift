@@ -204,15 +204,14 @@ class AudioStreamingManager: NSObject, ObservableObject, AiolaStreamingDelegate 
             
             if audioChunkBuffer.count >= chunkSize {
                 chunkToSend = audioChunkBuffer.prefix(chunkSize)  // Extract first 4096 bytes
-                //                print("extract chunkToSend \(String(describing: chunkToSend)), audioChunkBuffer.count \(self.audioChunkBuffer.count)")
                 audioChunkBuffer.removeFirst(chunkSize)  // 🗑 Remove sent chunk
                 
                 client!.sendAudioData(data: chunkToSend!) { [self] success in
-                    //                    if success {
-                    //                        print("📤 Sent 4096-byte chunk to server")
-                    //                    } else {
-                    //                        print("❌ Failed to send 4096-byte chunk")
-                    //                    }
+//                    if success {
+//                        print("📤 Sent 4096-byte chunk to server")
+//                    } else {
+//                        print("❌ Failed to send 4096-byte chunk")
+//                    }
                     bufferLock.unlock()
                 }
             }
