@@ -66,13 +66,13 @@ class AudioStreamingManager: NSObject, ObservableObject, AiolaStreamingDelegate 
     
     // Initialize the SDK Client
     func configureSDK() {
-        let bearerToken = "15976967f5c5b86216038d40f2771cde"
+        let bearerToken = "<your-bearer-token>"
         
         let config = StreamingConfig(
-                endpoint: "https://united.internal.aiola.ai",
+                endpoint: "<your-base-url>",
                 authType: "Bearer",
                 authCredentials: ["token": bearerToken],
-                flowId: "6a1a7205-2d4f-40ba-bbbb-a04b1d6f3787",
+                flowId: "<your-flow-id>",
                 executionId: "1232123",
                 langCode: "en_US",
                 timeZone: "UTC",
