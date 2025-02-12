@@ -37,6 +37,8 @@ class AudioStreamingManager: NSObject, ObservableObject, AiolaStreamingDelegate 
     
     @Published var events: [AudioEvent] = []  // Stores last 100 events
     
+    @Published var isStreamingActive: Bool = false
+    
     
     enum AudioProcessingError: Error {
         case failedToCreateTargetFormat
@@ -73,7 +75,7 @@ class AudioStreamingManager: NSObject, ObservableObject, AiolaStreamingDelegate 
                 authType: "Bearer",
                 authCredentials: ["token": bearerToken],
                 flowId: "<your-flow-id>",
-                executionId: "1232123",
+                executionId: "000000000",
                 langCode: "en_US",
                 timeZone: "UTC",
                 namespace: "/events",
@@ -156,6 +158,7 @@ class AudioStreamingManager: NSObject, ObservableObject, AiolaStreamingDelegate 
             inputNode.installTap(onBus: 0, bufferSize: 4096, format: inputFormat) { buffer, _ in
                 self.processAudioBuffer(buffer: buffer)
             }
+            isStreamingActive = true
         } catch {
             print("❌ Failed to start AVAudioEngine: \(error)")
         }
@@ -250,6 +253,7 @@ class AudioStreamingManager: NSObject, ObservableObject, AiolaStreamingDelegate 
         DispatchQueue.main.async {
             self.audioStatusMessage = "⛔️ Streaming stopped"
         }
+        isStreamingActive = false
         print("⛔️ Streaming stopped successfully.")
     }
     
@@ -292,14 +296,26 @@ class AudioStreamingManager: NSObject, ObservableObject, AiolaStreamingDelegate 
     
     func onEvents(data: Any) {
         print(data)
+
         if let eventArray = data as? [[String: Any]],
-           let results = eventArray.first?["results"] as? [String: Any],
-           let maskedQuery = results["masked_query"] as? String {
+           let results = eventArray.first?["results"] as? [String: Any] {
             
+            var content = ""
+
+            for (key, value) in results {
+                if let translations = value as? [String: Any] {
+                    content += "🔹 \(key.capitalized):\n"
+                    
+                    for (lang, translation) in translations {
+                        content += "   🌍 \(lang.uppercased()): \(translation)\n"
+                    }
+                }
+            }
+
             let newEvent = AudioEvent(timestamp: getCurrentTimestamp(),
                                       type: "📢 Event",
-                                      content: maskedQuery)
-            
+                                      content: content)
+
             DispatchQueue.main.async {
                 self.addEvent(newEvent)
             }

@@ -28,14 +28,12 @@ struct AudioStreamingView: View {
             .font(.footnote)
             .padding()
             .background(RoundedRectangle(cornerRadius: 8).fill(Color.gray.opacity(0.2)))
-
-            Spacer()
-
-            // ✅ Events List (Last 100 events)
+            
+            // ✅ Events List (Moved Up)
             Text("📜 Event Logs")
                 .font(.headline)
                 .padding(.top)
-
+            
             List(audioManager.events) { event in
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
@@ -51,9 +49,11 @@ struct AudioStreamingView: View {
                 }
                 .padding(5)
             }
-            .frame(maxHeight: 250)  // Limit height of the event list
+            .frame(maxHeight: 350)  // Limit height of the event list
             .listStyle(PlainListStyle())
 
+            Spacer()
+            
             HStack {
                 Button(action: {
                     audioManager.startStreaming()
@@ -62,11 +62,11 @@ struct AudioStreamingView: View {
                         .font(.subheadline)
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(audioManager.isMicPermissionGranted ? Color.green : Color.gray)
+                        .background(audioManager.isConnected && audioManager.isMicPermissionGranted && !audioManager.isStreamingActive ? Color.green : Color.gray)
                         .foregroundColor(.white)
                         .cornerRadius(8)
                 }
-                .disabled(!audioManager.isMicPermissionGranted)
+                .disabled(!audioManager.isConnected || !audioManager.isMicPermissionGranted || audioManager.isStreamingActive)
 
                 Button(action: {
                     audioManager.stopStreaming()
@@ -75,10 +75,11 @@ struct AudioStreamingView: View {
                         .font(.subheadline)
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color.red)
+                        .background(audioManager.isConnected && audioManager.isStreamingActive ? Color.red : Color.gray)
                         .foregroundColor(.white)
                         .cornerRadius(8)
                 }
+                .disabled(!audioManager.isConnected || !audioManager.isStreamingActive)
             }
             .padding()
         }
