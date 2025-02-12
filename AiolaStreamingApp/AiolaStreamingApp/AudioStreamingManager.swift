@@ -66,14 +66,14 @@ class AudioStreamingManager: NSObject, ObservableObject, AiolaStreamingDelegate 
     
     // Initialize the SDK Client
     func configureSDK() {
-        let bearerToken = "<your-bearer-token>"
+        let bearerToken = "15976967f5c5b86216038d40f2771cde"
         
         let config = StreamingConfig(
-                endpoint: "<your-base-url>",
+                endpoint: "https://united.internal.aiola.ai",
                 authType: "Bearer",
                 authCredentials: ["token": bearerToken],
-                flowId: "<your-flow-id>",
-                executionId: "1009",
+                flowId: "6a1a7205-2d4f-40ba-bbbb-a04b1d6f3787",
+                executionId: "1232123",
                 langCode: "en_US",
                 timeZone: "UTC",
                 namespace: "/events",
@@ -291,6 +291,7 @@ class AudioStreamingManager: NSObject, ObservableObject, AiolaStreamingDelegate 
     }
     
     func onEvents(data: Any) {
+        print(data)
         if let eventArray = data as? [[String: Any]],
            let results = eventArray.first?["results"] as? [String: Any],
            let maskedQuery = results["masked_query"] as? String {
